@@ -1,0 +1,112 @@
+.seach_blue_head {
+  background-color: #114f8b;
+  padding: 5rem 1rem;
+}
+.seach_blue_head h2 {
+  font-family: "Baloo Bhai 2", cursive;
+  font-size: 55px;
+  color: #fff;
+}
+.seach_blue_head span {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.seach_blue_head span:hover {
+  background: #fff;
+  color: #114f8b;
+  transition: 300ms ease;
+}
+/* ================================ */
+.search_results {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+}
+.s-result-left .div_result {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.div_result .result-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #eaeef5;
+  padding: 0.5rem 2rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.result-details .result-rate {
+  display: flex;
+}
+.result-details small {
+  display: flex;
+  justify-content: space-between;
+}
+.result-details a {
+  color: #fff;
+  background: #114f8b;
+  text-decoration: none;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.s-result-right iframe {
+  width: 500px;
+  height: 900px;
+  border: none;
+}
+@media screen and (max-width: 1220px) {
+  .search_results {
+    gap: 1rem;
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 1066px) {
+  .s-result-right iframe {
+    width: 400px;
+    height: 900px;
+  }
+}
+@media screen and (max-width: 962px) {
+  .s-result-right iframe {
+    width: 350px;
+    height: 900px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .s-result-right iframe {
+    width: 300px;
+    height: 990px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .search_results {
+    flex-direction: column;
+  }
+  .s-result-right iframe {
+    width: 100%;
+    height: 990px;
+  }
+  .s-result-left .div_result {
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+@media screen and (max-width: 588px) {
+  .s-result-left .div_result {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 588px) {
+  .s-result-left .div_result {
+    justify-content: center;
+    flex-direction: column;
+  }
+}

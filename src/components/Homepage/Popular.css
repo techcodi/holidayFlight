@@ -1,0 +1,42 @@
+.popularCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.popularCard img {
+  width: 100%;
+}
+.popularStay {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+.popularCard small {
+  color: #554;
+}
+.popularCard .price {
+  color: #114f8b;
+  display: flex;
+}
+.popularCard a {
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #114f8b;
+  padding: 10px 5px;
+  color: #000;
+}
+.popularCard a:hover {
+  background: #114f8b;
+  color: #fff;
+  transition: 300ms ease;
+  border: none;
+}
+.popular-container h2 {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+}
+.popularCard small {
+  display: flex;
+  justify-content: space-between;
+}

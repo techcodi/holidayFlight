@@ -1,0 +1,41 @@
+.news-container p {
+  color: #114f8b;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.news-container h5 {
+  color: #556;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.sectionNews {
+  background-color: #f3f3f3;
+  padding: 5rem 0;
+}
+.news-container {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.sectionNews .newPack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news-form button {
+  background: orange;
+  border: none;
+  padding: 10px 25px;
+  color: #fff;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.news-form label {
+  margin-bottom: 1rem;
+}
+.news-form input {
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+  width: 100%;
+}

@@ -1,0 +1,111 @@
+.card-flight-general span,
+.card-flight-general b {
+  color: #114f8b;
+}
+
+.card-flight-general small {
+  color: #557;
+}
+.card-flight-general p {
+  color: #fba403;
+  font-weight: bold;
+  text-align: center;
+}
+.card-flight-general {
+  display: flex;
+  align-items: center;
+  border: 1px solid #a59c9c;
+  border-radius: 5px;
+  margin: 1rem;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.card-flight-general:hover {
+  box-shadow: 2px 2px 12px #5555;
+  transition: 300ms ease;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+.card-flight-general .f-right {
+  padding: 1rem;
+  border-right: 1px solid #a59c9c;
+}
+
+/* ============================= */
+.card-checkbox-list .checkbox-first {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.checkbox-first b {
+  color: #7e8b97;
+}
+/* ========================RECENTS BOOKED=============== */
+.f-cards-result {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1rem;
+}
+.recent-booked-card {
+  margin: 1rem;
+  border: 1px solid #557;
+  padding: 10px;
+  border-radius: 5px;
+}
+.recent-booked-card:hover {
+  box-shadow: 2px 2px 12px #5555;
+  transition: 300ms ease;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+.recent-booked-card b {
+  color: #114f8b;
+  font-size: 1.5rem;
+}
+.recent-booked-card small {
+  color: #557;
+  font-size: 1.2rem;
+}
+.booked-card-div2 {
+  background-color: #e1dfdf;
+  padding: 10px;
+  border-radius: 5px;
+}
+.line {
+  border-bottom: 1px solid #557;
+}
+
+@media screen and (max-width: 1030px) {
+  .f-cards-result {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 820px) {
+  .f-cards-result {
+    grid-template-columns: 1fr;
+  }
+  .card-checkbox-list .checkbox-first {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 485px) {
+  .f-cards-result {
+    margin: 0px;
+  }
+  .f-cards-result .f-space {
+    gap: 0px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .f-cards-result {
+    padding: 0px;
+    padding-right: 10px;
+  }
+  .card-flight-general {
+    gap: 5px;
+  }
+  .card-checkbox-list .checkbox-first {
+    padding: 10px;
+  }
+}
