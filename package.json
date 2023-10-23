@@ -1,4 +1,5 @@
 {
+  "homepage": "https://techcodi.github.io/holidayFlight",
   "name": "traveling-flight",
   "version": "0.1.0",
   "private": true,
@@ -17,6 +18,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run deploy",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -42,6 +45,7 @@
   },
   "devDependencies": {
     "@iconify/icons-bxs": "^1.2.6",
-    "@iconify/react": "^4.1.1"
+    "@iconify/react": "^4.1.1",
+    "gh-pages": "^6.0.0"
   }
 }
