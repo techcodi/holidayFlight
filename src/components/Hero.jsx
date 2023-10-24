@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Hero.css";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
+import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
 
 const Hero = () => {
@@ -11,13 +12,7 @@ const Hero = () => {
       <nav>
         <div className="NAV-Container">
           <div className="HeroLeft">
-            <img
-              src="./Fickleflight Logo.png"
-              alt="flight logo"
-              onClick={() => {
-                setOpenMenu(!openMenu);
-              }}
-            />
+            <img src="./Fickleflight Logo.png" alt="flight logo" />
           </div>
           <div className={` NavRight ${openMenu ? "active" : "inactive"}`}>
             <div className="nav_link">
@@ -44,6 +39,13 @@ const Hero = () => {
               <button className="booked-nav">Book Now!</button>
             </div>
           </div>
+          <span className="menu-icon">
+            <MenuIcon
+              onClick={() => {
+                setOpenMenu(!openMenu);
+              }}
+            />
+          </span>
         </div>
       </nav>
 
